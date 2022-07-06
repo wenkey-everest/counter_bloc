@@ -1,16 +1,13 @@
-# apitest
+# Counter app
 
-A new Flutter project.
+A simple counter app for exploring BloC and Cubit.
 
-## Getting Started
+## Analysis
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+- CounterCubit contains the business logic.
+- CounterView contains blocBuilder that changes the state and does not know the logic in CounterCubit.
+- Logic is seperated from the presenter.
+- BlocProvider is also seperated from the Bloc implementation because for loosly coupling.
+- Exported Cubit and view to access for other project
+```

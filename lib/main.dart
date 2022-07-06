@@ -8,5 +8,6 @@ void main() {
   BlocOverrides.runZoned(
     () => runApp(const CounterApp()),
     blocObserver: CounterObserver(),
+    //BlocObserver is used to observe all state changes in counterApp
   );
 }

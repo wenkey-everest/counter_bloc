@@ -12,7 +12,9 @@ class CounterView extends StatelessWidget {
       appBar: AppBar(title: const Text('counter')),
       body: Center(
           child: BlocBuilder<CounterCubit, int>(builder: (context, state) {
-        return Text('$state', style: textTheme.headline2);
+        return Text('$state',
+            style: textTheme
+                .headline2); //Apply increments and decrements to numbers
       })),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
